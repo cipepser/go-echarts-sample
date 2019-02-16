@@ -85,3 +85,4 @@ fabric.properties
 
 # self difinition
 .idea
+.DS_Store

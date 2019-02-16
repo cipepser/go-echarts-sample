@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Awesome go-echarts</title>
+    <script src="http://chenjiandongx.com/go-echarts-assets/assets/echarts.min.js"></script>
+    <link href="http://chenjiandongx.com/go-echarts-assets/assets/bulma.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="select" style="margin-right: 10px; margin-top:10px; float:right"></div>
+
+<div class="container">
+    <div class="item" id="NyfAfPyVctoj"
+         style="width:900px;height:500px;"></div>
+</div>
+<script type="text/javascript">
+    let myChart_NyfAfPyVctoj = echarts.init(document.getElementById('NyfAfPyVctoj'), "white");
+    let option_NyfAfPyVctoj = {
+        title: {"text":"棒グラフ",},
+        tooltip: {},
+        legend: {},
+        xAxis: [{"data":["月曜","火曜","水曜","木曜","金曜","土曜","日曜"],"splitArea":{"show":false,},"splitLine":{"show":false,}}],
+        yAxis: [{"axisLabel":{"show":true},"splitArea":{"show":false,},"splitLine":{"show":false,}}],
+        series: [
+        {"name":"先週","type":"bar","data":[20,30,34,33,31,10,15],"label":{"show":false},"emphasis":{"label":{"show":false},},"markLine":{"label":{"show":false}},"markPoint":{"label":{"show":false}},},
+        {"name":"今週","type":"bar","data":[23,27,31,35,29,12,11],"label":{"show":false},"emphasis":{"label":{"show":false},},"markLine":{"label":{"show":false}},"markPoint":{"label":{"show":false}},},
+        ],
+        color: ["#c23531","#2f4554","#61a0a8","#d48265","#91c7ae","#749f83","#ca8622","#bda29a","#6e7074","#546570","#c4ccd3"],
+    };
+    myChart_NyfAfPyVctoj.setOption(option_NyfAfPyVctoj);
+</script>
+
+<style>
+    .container {margin-top:30px; display: flex;justify-content: center;align-items: center;}
+    .item {margin: auto;}
+</style>
+</body>
+</html>
