@@ -42,6 +42,7 @@ func main() {
 
 ![barChart](https://github.com/cipepser/go-echarts-sample/blob/master/img/bar.png)
 
+imageだとわからないが、htmlで出力されるファイルでは棒グラフに触れる。
 
 
 ## References
